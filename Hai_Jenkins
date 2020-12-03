@@ -1,0 +1,55 @@
+pipeline {
+    agent any 
+	stages {
+	   stage ("pull the code from SCM") {
+             steps {
+                  echo "Harish girish mruthya yougeesh  has been pulled code from SCM 
+                  }
+         }
+
+
+
+        stage ("code scanning stage from sonar qube") {
+             steps {
+                   echo "code coverage and code scanning , code duplication, unit testing , finding vulnerability evertyhging will done in code scanning .,
+						for any language java, c# , python, go, kotlin, swift "
+			       }
+				   
+
+
+
+		 
+		stage ("Build the code from Build tool") {
+		      steps {
+			      echo "if its java project Maven or gradle  is the build tool, C# msbuild tool, PHP PHING in pom.xml we can add php plugin
+				        NodeJS NPM build tool,Pyhton Pybuild ,go lang --go build 
+				        Android application Android studio is the build tool,
+				        if its i phone xcode is the build tool"
+						java project --> jar, war, ear, zip , tar etc.
+						c#--->msi,dll,ini,exe,zip 7zip etc
+						android packages--->apk    ---->where we can get the apk , from google play store 
+						iphone--->ipa ----> app store in iphone
+						python--> .py    
+						go ---> .exe or .go
+					}
+					
+
+         stage ("deploy to the artifactory tools") {
+		     steps {
+			      echo " mention the urls and username and password for artifactory tools,as a parameters"
+				  }
+			}
+		   
+         stage ("if its microservices projects, deploy to the docker registry") {
+
+             steps {
+                 echo "deploying into the docket images to the docker registory"
+					}
+		 } 
+		 
+   
+        stage ("provison the nodes through terraform or ansible") {
+		     steps {
+			    echo "after sucessfully provisioning the ndoes, deploy"
+				}
+			}
