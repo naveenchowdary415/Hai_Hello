@@ -11,9 +11,10 @@ pipeline {
 
         stage ("code scanning stage from sonar qube") {
              steps {
-                   echo "code coverage and code scanning , code duplication, unit testing , finding vulnerability evertyhging will done in code scanning .,
+                   echo "code coverage and code scanning , code duplication, unit testing , finding vulnerability evertyhging will done in code scanning ,
 						for any language java, c# , python, go, kotlin, swift "
 			       }
+			      }
 				   
 
 
@@ -30,7 +31,7 @@ pipeline {
 						android packages--->apk    ---->where we can get the apk , from google play store 
 						iphone--->ipa ----> app store in iphone
 						python--> .py    
-						go ---> .exe or .go
+						go ---> .exe or .go"
 					}
 					
 
