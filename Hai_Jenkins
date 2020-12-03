@@ -3,7 +3,7 @@ pipeline {
 	stages {
 	   stage ("pull the code from SCM") {
              steps {
-                  echo "Harish girish mruthya yougeesh  has been pulled code from SCM 
+                  echo "Harish girish mruthya yougeesh  has been pulled code from SCM" 
                   }
          }
 
